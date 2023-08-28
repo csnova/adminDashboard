@@ -12,13 +12,13 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: max(200px, 20%) max(800px, 80%);
+  grid-template-columns: max(200px, 15%) max(800px, 85%);
   grid-template-rows: max(170px, 20%) max(775px, 80%);
 }
 
 .sidebar {
   display: grid;
-  grid-template-rows: max(50px, 15%) max(400px, 50%) max(100px, 35%);
+  grid-template-rows: max(50px, 20%) max(400px, 45%) max(100px, 35%);
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -55,8 +55,8 @@ html {
 .privacy {
   display: grid;
   grid-template-columns:
-    max(10px, 25%) max(10px, 25%) max(10px, 25%)
-    max(10px, 25%);
+    max(5px, 10%) max(10px, 30%) max(10px, 45%)
+    max(5px, 15%);
   align-items: center;
   height: 60px;
 }
@@ -236,7 +236,7 @@ h1 {
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: repeat(3, max(10px, 30%));
+  grid-template-columns: repeat(2, max(10px, 45%));
   grid-template-rows: repeat(3, max(10px, 30%));
   grid-gap: 20px;
 }
@@ -244,7 +244,36 @@ h1 {
 .tile {
   border-radius: 15px;
   background-color: var(--main-text-color);
-  box-shadow: 2px 2px 2px 2px grey;
+  box-shadow: inset 10px 0px var(--acc-color);
+  display: grid;
+  grid-template-rows: max(10px, 20%) max(10px, 60%) max(10px, 20%);
+  padding: 5px;
+  padding-left: 15px;
+}
+.title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 20px;
+  color: var(--acc-text-color);
+}
+
+.icon-bar {
+  justify-self: end;
+  margin-right: 5px;
+}
+
+.icon-bar img {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  height: 25px;
+  width: 25px;
 }
 
 .announcements-container {
