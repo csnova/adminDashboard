@@ -3,14 +3,137 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>No Title Yet</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>No Title Yet</h1>
+    <div class="container">
+      <div class="header">
+        <div class="search-container">
+          <button class="image-button">
+            <img
+              class="glass"
+              src="Images/icons8-search-50.png"
+              alt="searchIcon"
+            />
+          </button>
+          <form>
+            <input type="text" placeholder="Search.." name="search" />
+          </form>
+        </div>
 
+        <div class="notf-container">
+          <div class="empty"></div>
+          <img
+            class="bell"
+            src="Images/icons8-notification-64.png"
+            alt="notificationBell"
+          />
+          <img
+            class="userLogo"
+            src="Images/icons8-red-panda-48.png"
+            alt="userLogo"
+          />
+          <p class="userName">Chandler Nova</p>
+        </div>
 
+        <div class="welcome">
+          <img
+            class="userLogoBig"
+            src="Images/icons8-red-panda-48.png"
+            alt="userLogo"
+          />
+          <p class="greeting">Hi there,</p>
+          <p class="user">Chandler Nova (@csnova)</p>
+        </div>
 
+        <div class="links">
+          <div class="new">New</div>
+          <div class="upload">Upload</div>
+          <div class="share">Share</div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="logoBar">
+          <img src="Images/SuperNovaLogo.svg" alt="logo" class="logo" />
+          <h2>Dashboard</h2>
+        </div>
+
+        <div class="topBar">
+          <div class="home">
+            <img src="Images/icons8-home-48.png" alt="homeIcon" />
+            <p class="titles">Home</p>
+          </div>
+
+          <div class="profile">
+            <img src="Images/icons8-profile-50.png" alt="profileIcon" />
+            <p class="titles">Profile</p>
+          </div>
+
+          <div class="message">
+            <img src="Images/icons8-speech-bubble-48.png" alt="messageIcon" />
+            <p class="titles">Message</p>
+          </div>
+
+          <div class="history">
+            <img src="Images/icons8-clock-60.png" alt="historyIcon" />
+            <p class="titles">History</p>
+          </div>
+          <div class="task">
+            <img src="Images/icons8-tasks-48.png" alt="taskIcon" />
+            <p class="titles">Task</p>
+          </div>
+
+          <div class="communities">
+            <img src="Images/icons8-people-50.png" alt="communitiesIcon" />
+            <p class="titles">Groups</p>
+          </div>
+        </div>
+
+        <div class="bottomBar">
+          <div class="settings">
+            <img src="Images/icons8-settings-50.png" alt="settingsIcon" />
+            <p class="titles">Settings</p>
+          </div>
+
+          <div class="support">
+            <img src="Images/icons8-help-60.png" alt="supportIcon" />
+            <p class="titles">Support</p>
+          </div>
+
+          <div class="privacy">
+            <img src="Images/icons8-shield-50.png" alt="privacyIcon" />
+            <p class="titles">Privacy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="projects-container">
+          <h1>Your Projects</h1>
+          <div class="projects">
+            <div class="tile" id="tile-1"></div>
+            <div class="tile" id="tile-2"></div>
+            <div class="tile" id="tile-3"></div>
+            <div class="tile" id="tile-4"></div>
+            <div class="tile" id="tile-5"></div>
+            <div class="tile" id="tile-6"></div>
+            <div class="tile" id="tile-7"></div>
+            <div class="tile" id="tile-8"></div>
+            <div class="tile" id="tile-9"></div>
+          </div>
+        </div>
+        <div class="announcements-container">
+          <h1>Announcements</h1>
+          <div class="announcements"></div>
+        </div>
+        <div class="trending-container">
+          <h1>Trending</h1>
+          <div class="trending"></div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
