@@ -12,7 +12,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: max(200px, 15%) max(800px, 85%);
+  grid-template-columns: max(250px, 15%) max(800px, 85%);
   grid-template-rows: max(170px, 20%) max(775px, 80%);
 }
 
@@ -35,7 +35,11 @@ html {
 
 .logo {
   width: auto;
-  height: 100px;
+  height: 70px;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 .topBar,
@@ -55,10 +59,11 @@ html {
 .privacy {
   display: grid;
   grid-template-columns:
-    max(5px, 10%) max(10px, 30%) max(10px, 45%)
-    max(5px, 15%);
+    max(10px, 15%) max(10px, 15%) max(10px, 45%)
+    max(10px, 15%);
   align-items: center;
   height: 60px;
+  grid-gap: 15px;
 }
 
 .topBar img,
@@ -67,6 +72,7 @@ html {
   width: 25px;
   grid-column-start: 2;
   grid-column-end: 3;
+  justify-self: end;
 }
 
 .titles {
@@ -81,7 +87,7 @@ html {
   background-color: var(--main-text-color);
   box-shadow: 0px 5px 5px grey;
   display: grid;
-  grid-template-columns: max(10px, 60%) max(10px, 40%);
+  grid-template-columns: max(300px, 60%) max(450px, 40%);
   grid-template-rows: max(10px, 40%) max(10px, 60%);
   overflow: hidden;
 }
@@ -149,7 +155,7 @@ input[type="text"] {
 
 .welcome {
   display: grid;
-  grid-template-columns: max(10px, 15%) max(10px, 85%);
+  grid-template-columns: max(100px, 15%) max(10px, 85%);
   grid-template-rows: max(10px, 20%) max(10px, 80%);
 }
 
@@ -191,7 +197,7 @@ input[type="text"] {
 
 .links {
   display: grid;
-  grid-template-columns: max(10px, 33%) max(10px, 33%) max(10px, 33%);
+  grid-template-columns: max(50px, 33%) max(50px, 33%) max(50px, 33%);
   justify-items: center;
   align-items: center;
 }
@@ -292,6 +298,15 @@ h1 {
   box-shadow: 2px 2px 2px 2px grey;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: grid;
+  grid-template-rows: max(50px, 30%) max(50px, 30%) max(50px, 30%);
+  padding: 20px;
+  grid-gap: 7px;
+}
+
+#announcement-1,
+#announcement-2 {
+  border-bottom: 1px solid var(--acc-text-color);
 }
 
 .trending-container {
@@ -310,4 +325,41 @@ h1 {
   box-shadow: 2px 2px 2px 2px grey;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: grid;
+  grid-template-rows: max(50px, 25%) max(50px, 25%) max(50px, 25%) max(50px, 25%);
+  padding: 20px;
+  align-items: center;
+}
+
+.trending div{
+  display: grid;
+  grid-template-columns: max(60px, 15%) max(100px, 50%) max(100px, 20%);
+  grid-gap: 15px;
+}
+
+.trending div img{
+  padding: 5px;
+  border-radius: 45px;
+  width: 45px;
+  height: 45px;
+}
+
+.user1 {
+  background-color: rgb(131, 238, 154);
+}
+
+.user2 {
+  background-color: rgb(243, 131, 193);
+}
+
+.user3 {
+  background-color: rgb(241, 164, 128);
+}
+
+.user4 {
+  background-color: rgb(108, 108, 238);
+}
+
+.userTag {
+  font-weight: 600;
 }
